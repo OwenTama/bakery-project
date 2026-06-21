@@ -1,62 +1,93 @@
-/* Custom Global Styles for The Daily Crumb */
+/* Premium Custom Styles for The Daily Crumb */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fcfbf7;
-    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfbf7; /* Soft cream background */
+    color: #4a3f35; /* Earthy dark brown text */
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Elegant Headers */
+h1, h2, h3, .navbar-brand {
+    font-family: 'Playfair Display', serif;
 }
 
 /* Customizing the Navbar Theme */
 .navbar {
-    background-color: #2b2621 !important; /* Dark warm espresso brown */
-    border-bottom: 3px solid #ffc107; /* Warning yellow accent border */
+    background-color: #2c1b10 !important; /* Deep Roasted Coffee */
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .navbar-brand {
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #ffc107 !important;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e6a15c !important; /* Soft warm gold */
 }
 
-/* Custom Buttons and Badges */
+.nav-link {
+    font-weight: 400;
+    color: #f5efe6 !important;
+    margin-right: 10px;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #e6a15c !important;
+}
+
+/* Dynamic Styling for Menu Cards */
+.menu-card {
+    background-color: #ffffff;
+    border-radius: 15px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f1ebd9 !important;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(44, 27, 16, 0.08) !important;
+}
+
+/* Custom Price Badge */
+.price-badge {
+    background-color: #2c1b10 !important;
+    color: #e6a15c !important;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Hero Section Enhancement */
+.hero-box {
+    background-color: #f5efe6 !important;
+    border-radius: 20px !important;
+    border: none !important;
+}
+
+/* Primary Accent Button */
 .btn-warning {
-    background-color: #d9913c !important;
-    border-color: #d9913c !important;
-    color: #ffffff !important;
+    background-color: #e6a15c !important;
+    border-color: #e6a15c !important;
+    color: #2c1b10 !important;
+    padding: 12px 30px;
+    border-radius: 30px;
 }
 
 .btn-warning:hover {
-    background-color: #bc792b !important;
-    border-color: #bc792b !important;
+    background-color: #2c1b10 !important;
+    border-color: #2c1b10 !important;
+    color: #e6a15c !important;
 }
 
-/* Footer Accent styling */
-footer {
-    background-color: #2b2621 !important;
-    border-top: 3px solid #ffc107;
-}
-
-/* Smooth Image hover adjustments for Gallery */
-.card img {
-    transition: transform 0.3s ease;
-}
-.card img:hover {
-    transform: scale(1.03);
-}
-
-/* Custom classes managed by JavaScript Feature 1 (Dark Mode Toggle) */
+/* Custom classes for JavaScript Dark Mode Toggle */
 body.bg-dark {
-    background-color: #1a1613 !important;
-    color: #f1ebd9 !important;
+    background-color: #1a110b !important;
+    color: #f5efe6 !important;
 }
-body.bg-dark .bg-light, 
-body.bg-dark .bg-white,
-body.bg-dark .card,
-body.bg-dark .border {
-    background-color: #2b2621 !important;
-    color: #f1ebd9 !important;
-    border-color: #443c35 !important;
-}
-body.bg-dark text-muted {
-    color: #bfae9c !important;
+body.bg-dark .menu-card, 
+body.bg-dark .hero-box {
+    background-color: #2c1b10 !important;
+    color: #f5efe6 !important;
+    border-color: #3d291b !important;
 }
