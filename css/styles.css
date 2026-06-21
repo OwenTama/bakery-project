@@ -1,0 +1,62 @@
+/* Custom Global Styles for The Daily Crumb */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcfbf7;
+    color: #333333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Customizing the Navbar Theme */
+.navbar {
+    background-color: #2b2621 !important; /* Dark warm espresso brown */
+    border-bottom: 3px solid #ffc107; /* Warning yellow accent border */
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffc107 !important;
+}
+
+/* Custom Buttons and Badges */
+.btn-warning {
+    background-color: #d9913c !important;
+    border-color: #d9913c !important;
+    color: #ffffff !important;
+}
+
+.btn-warning:hover {
+    background-color: #bc792b !important;
+    border-color: #bc792b !important;
+}
+
+/* Footer Accent styling */
+footer {
+    background-color: #2b2621 !important;
+    border-top: 3px solid #ffc107;
+}
+
+/* Smooth Image hover adjustments for Gallery */
+.card img {
+    transition: transform 0.3s ease;
+}
+.card img:hover {
+    transform: scale(1.03);
+}
+
+/* Custom classes managed by JavaScript Feature 1 (Dark Mode Toggle) */
+body.bg-dark {
+    background-color: #1a1613 !important;
+    color: #f1ebd9 !important;
+}
+body.bg-dark .bg-light, 
+body.bg-dark .bg-white,
+body.bg-dark .card,
+body.bg-dark .border {
+    background-color: #2b2621 !important;
+    color: #f1ebd9 !important;
+    border-color: #443c35 !important;
+}
+body.bg-dark text-muted {
+    color: #bfae9c !important;
+}
