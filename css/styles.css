@@ -170,3 +170,6 @@ body.bg-dark .hero-box {
 body.bg-dark .price-badge {
     background-color: rgba(184, 125, 67, 0.05) !important;
 }
+.form-control:hover {
+    background-color: #faf6f0;
+}
