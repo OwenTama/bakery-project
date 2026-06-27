@@ -15,6 +15,9 @@
     --radius-md: 12px;
     --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
