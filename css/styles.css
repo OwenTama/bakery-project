@@ -176,3 +176,7 @@ body.bg-dark .price-badge {
 .form-control:hover {
     background-color: #faf6f0;
 }
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
