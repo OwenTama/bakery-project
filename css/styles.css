@@ -180,3 +180,6 @@ img {
     user-select: none;
     -webkit-user-drag: none;
 }
+textarea:focus {
+    background-color: #faf8f5 !important;
+}
